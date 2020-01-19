@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="2018,CVPR,Person Image Generation," />
 
 
 
@@ -79,17 +79,19 @@
 
 
 
-<meta name="description" content="辣叽一只">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="这篇文章来自MIT,采用了类似于分而治之的想法:对于前景、背景的合成分开考虑，最后统一到输出。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Synthesizing Images of Humans in Unseen Poses">
+<meta property="og:url" content="http://yoursite.com/2020/01/19/Synthesizing-Images-of-Humans-in-Unseen-Poses/index.html">
 <meta property="og:site_name" content="Welcome To WangQiwei&#39;s Blog">
-<meta property="og:description" content="辣叽一只">
+<meta property="og:description" content="这篇文章来自MIT,采用了类似于分而治之的想法:对于前景、背景的合成分开考虑，最后统一到输出。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-01-12T11:45:07.000Z">
-<meta property="article:modified_time" content="2020-01-12T13:00:03.644Z">
+<meta property="article:published_time" content="2020-01-19T03:12:47.000Z">
+<meta property="article:modified_time" content="2020-01-19T03:48:38.897Z">
 <meta property="article:author" content="Wang Qiwei">
-<meta property="article:tag" content="Computer Science">
+<meta property="article:tag" content="2018">
+<meta property="article:tag" content="CVPR">
+<meta property="article:tag" content="Person Image Generation">
 <meta name="twitter:card" content="summary">
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/01/19/Synthesizing-Images-of-Humans-in-Unseen-Poses/"/>
 
 
 
 
 
-  <title>categories | Welcome To WangQiwei's Blog</title>
+  <title>Synthesizing Images of Humans in Unseen Poses | Welcome To WangQiwei's Blog</title>
   
 
 
@@ -251,40 +253,188 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/19/Synthesizing-Images-of-Humans-in-Unseen-Poses/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wang Qiwei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Welcome To WangQiwei's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                2 categories in total
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/source/categories/Person-Image-Generation-Papers/">Person Image Generation Papers</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/source/categories/Test/">Test</a><span class="category-list-count">3</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">Synthesizing Images of Humans in Unseen Poses</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-01-19T11:12:47+08:00">
+                2020-01-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/source/categories/Person-Image-Generation-Papers/" itemprop="url" rel="index">
+                    <span itemprop="name">Person Image Generation Papers</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  这篇文章来自MIT,采用了类似于分而治之的想法:对于前景、背景的合成分开考虑，最后统一到输出。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="Synthesizing-Images-of-Humans-in-Unseen-Poses"><a href="#Synthesizing-Images-of-Humans-in-Unseen-Poses" class="headerlink" title="Synthesizing Images of Humans in Unseen Poses"></a>Synthesizing Images of Humans in Unseen Poses</h2><h4 id="论文信息"><a href="#论文信息" class="headerlink" title="论文信息:"></a>论文信息:</h4><p><a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_Synthesizing_Images_of_CVPR_2018_paper.pdf" target="_blank" rel="noopener">论文地址</a></p>
+<p><a href="https://github.com/balakg/posewarp-cvpr2018" target="_blank" rel="noopener">Github地址</a></p>
+<h4 id="To-Do"><a href="#To-Do" class="headerlink" title="To Do:"></a>To Do:</h4><ul>
+<li><input disabled="" type="checkbox"> 论文理解</li>
+<li><input disabled="" type="checkbox"> Train_pipeline</li>
+</ul>
+
       
     </div>
     
     
     
+	<div>
+    
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+    
+	</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/source/tags/2018/" rel="tag"><i class="fa fa-tag"></i> 2018</a>
+          
+            <a href="/source/tags/CVPR/" rel="tag"><i class="fa fa-tag"></i> CVPR</a>
+          
+            <a href="/source/tags/Person-Image-Generation/" rel="tag"><i class="fa fa-tag"></i> Person Image Generation</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/01/13/%E6%B5%8B%E8%AF%95%E5%85%AC%E5%BC%8F/" rel="next" title="测试公式">
+                <i class="fa fa-chevron-left"></i> 测试公式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -317,8 +467,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -414,6 +573,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Synthesizing-Images-of-Humans-in-Unseen-Poses"><span class="nav-number">1.</span> <span class="nav-text">Synthesizing Images of Humans in Unseen Poses</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#论文信息"><span class="nav-number">1.0.1.</span> <span class="nav-text">论文信息:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#To-Do"><span class="nav-number">1.0.2.</span> <span class="nav-text">To Do:</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

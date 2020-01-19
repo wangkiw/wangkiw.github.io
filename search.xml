@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Synthesizing Images of Humans in Unseen Poses</title>
+      <link href="/2020/01/19/Synthesizing-Images-of-Humans-in-Unseen-Poses/"/>
+      <url>/2020/01/19/Synthesizing-Images-of-Humans-in-Unseen-Poses/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Synthesizing-Images-of-Humans-in-Unseen-Poses"><a href="#Synthesizing-Images-of-Humans-in-Unseen-Poses" class="headerlink" title="Synthesizing Images of Humans in Unseen Poses"></a>Synthesizing Images of Humans in Unseen Poses</h2><h4 id="论文信息"><a href="#论文信息" class="headerlink" title="论文信息:"></a>论文信息:</h4><p><a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Balakrishnan_Synthesizing_Images_of_CVPR_2018_paper.pdf" target="_blank" rel="noopener">论文地址</a></p><p><a href="https://github.com/balakg/posewarp-cvpr2018" target="_blank" rel="noopener">Github地址</a></p><h4 id="To-Do"><a href="#To-Do" class="headerlink" title="To Do:"></a>To Do:</h4><ul><li><input disabled="" type="checkbox"> 论文理解</li><li><input disabled="" type="checkbox"> Train_pipeline</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Person Image Generation Papers </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 2018 </tag>
+            
+            <tag> CVPR </tag>
+            
+            <tag> Person Image Generation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试公式</title>
       <link href="/2020/01/13/%E6%B5%8B%E8%AF%95%E5%85%AC%E5%BC%8F/"/>
       <url>/2020/01/13/%E6%B5%8B%E8%AF%95%E5%85%AC%E5%BC%8F/</url>
