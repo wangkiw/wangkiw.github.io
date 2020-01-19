@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>test_color</title>
+      <link href="/2020/01/19/test-color/"/>
+      <url>/2020/01/19/test-color/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C语言标准库函数"><a href="#C语言标准库函数" class="headerlink" title="C语言标准库函数"></a>C语言标准库函数</h1><h2 id="数学函数"><a href="#数学函数" class="headerlink" title="数学函数"></a>数学函数</h2><ul><li><strong>abs(x) 求整数x的绝对值</strong>    </li><li><strong>cos(x)</strong>  </li><li><strong>fabs(x)</strong><br><font color=Blue>我是黑体字</font><br><font size=5 color=red face ="console">我是黑体字</font><table><tr><td bgcolor=yellow>背景色 yellow</td></tr></table><table><tr><td bgcolor=#7FFFD4>背景颜色</td></tr></table>    </li></ul><p>==踩踩踩==</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Test </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Synthesizing Images of Humans in Unseen Poses</title>
       <link href="/2020/01/19/Synthesizing-Images-of-Humans-in-Unseen-Poses/"/>
       <url>/2020/01/19/Synthesizing-Images-of-Humans-in-Unseen-Poses/</url>
