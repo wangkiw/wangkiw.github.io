@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="问题描述一个数的序列 $$b_i$$,当$$b_1$$&lt;$$b_2$$&lt;…&lt;$$b_s$$的时候，称这个序列是上升的。对于给定的一个序,列($$a_1$$,$$a_2$$,…,$$a_N$$),我们可以得到一些上升的子序列($$a_{i_1}$$,$$a_{i_2}$$,…,$$a_{i_K}$$),这里的1$$\leq$$$$i_1$$&lt;$$i_2$$…….&lt;$$i">
+<meta name="description" content="最长上升子序列问题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最长上升子序列">
 <meta property="og:url" content="http://yoursite.com/2020/01/20/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/index.html">
 <meta property="og:site_name" content="Welcome To WangQiwei&#39;s Blog">
-<meta property="og:description" content="问题描述一个数的序列 $$b_i$$,当$$b_1$$&lt;$$b_2$$&lt;…&lt;$$b_s$$的时候，称这个序列是上升的。对于给定的一个序,列($$a_1$$,$$a_2$$,…,$$a_N$$),我们可以得到一些上升的子序列($$a_{i_1}$$,$$a_{i_2}$$,…,$$a_{i_K}$$),这里的1$$\leq$$$$i_1$$&lt;$$i_2$$…….&lt;$$i">
+<meta property="og:description" content="最长上升子序列问题">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-20T14:35:33.000Z">
-<meta property="article:modified_time" content="2020-01-20T15:10:37.458Z">
+<meta property="article:modified_time" content="2020-01-20T15:17:10.835Z">
 <meta property="article:author" content="Wang Qiwei">
 <meta property="article:tag" content="动态规划">
 <meta property="article:tag" content="算法">
@@ -340,6 +340,10 @@
           
 
           
+              <div class="post-description">
+                  最长上升子序列问题
+              </div>
+          
 
         </div>
       </header>
@@ -354,7 +358,7 @@
       
 
       
-        <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>一个数的序列 $$b_i$$,当$$b_1$$&lt;$$b_2$$&lt;…&lt;$$b_s$$的时候，称这个序列是上升的。对于给定的一个序,列($$a_1$$,$$a_2$$,…,$$a_N$$),我们可以得到一些上升的子序列($$a_{i_1}$$,$$a_{i_2}$$,…,$$a_{i_K}$$),这里的1$$\leq$$$$i_1$$&lt;$$i_2$$…….&lt;$$i_K$$$\leq$N。比如，对于序列(1,7,3,5,9,4,8),有它的一些上升子序列(1,7),(3,4,8)等等。这些子序列中最长的长度是4，比如子序列(1,3,5,8)。现在要找出一个序列的<font color=Red><strong>最长上升子序列的长度</strong></font>。</p>
+        <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>一个数的序列 $b_i$,当$b_1$&lt;$b_2$&lt;…&lt;$b_s$的时候，称这个序列是上升的。对于给定的一个序,列($a_1$,$a_2$,…,$a_N$),我们可以得到一些上升的子序列($a_{i_1}$,$a_{i_2}$,…,$a_{i_K}$),这里的1$\leq$$i_1$&lt;$i_2$…….&lt;$i_K$$\leq$N。比如，对于序列(1,7,3,5,9,4,8),有它的一些上升子序列(1,7),(3,4,8)等等。这些子序列中最长的长度是4，比如子序列(1,3,5,8)。现在要找出一个序列的<font color=Red><strong>最长上升子序列的长度</strong></font>。</p>
 <h3 id="输入数据"><a href="#输入数据" class="headerlink" title="输入数据"></a>输入数据</h3><p>输入的第一行是序列的长度 N (1 &lt;= N &lt;= 1000)。第二行给出序列中的 N 个整数，这些 整数的取值范围都在 0 到 10000。</p>
 <h3 id="输出要求"><a href="#输出要求" class="headerlink" title="输出要求"></a>输出要求</h3><p>最长上升子序列的长度</p>
 <h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><ul>
@@ -362,7 +366,7 @@
 </li>
 <li><p>转移方程：</p>
 <p>MaxLen(1)=1</p>
-<p>MaxLen(k)=Max{MaxLen(i):1&lt;i&lt;k,$$a_i$$&lt;$$a_k$$,k$$\not=$$1}+1</p>
+<p>MaxLen(k)=Max{MaxLen(i):1&lt;i&lt;k,$a_i$&lt;$a_k$,k$\not=$1}+1</p>
 <p><code>MaxLen(i)</code>代表以<font color=Red>第i个元素作为一个上升子序列最后元素的最长子序列值。</font></p>
 </li>
 </ul>
