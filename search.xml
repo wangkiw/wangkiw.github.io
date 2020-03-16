@@ -4,11 +4,51 @@
   
     
     <entry>
+      <title>openpose配置以及简单使用</title>
+      <link href="/2020/03/16/openpose%E9%85%8D%E7%BD%AE%E4%BB%A5%E5%8F%8A%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/"/>
+      <url>/2020/03/16/openpose%E9%85%8D%E7%BD%AE%E4%BB%A5%E5%8F%8A%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>官方文档的文档其实已经很完善了，应该先细读完文档，而不是从网上找各种教程！</p></blockquote><p>TODO:</p><p>-[ ] 问题记录<br>-[ ] 参数说明</p><hr><h2 id="简单用法"><a href="#简单用法" class="headerlink" title="简单用法"></a>简单用法</h2><ul><li>在openpose目录下运行:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./build/examples/openpose/openpose.bin --image_dir /path/to/images/folder  --write_json /json/file/output_dir/ --display 0 --render_pose 0 --keypoint_scale 4</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> openpose </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 环境 </tag>
+            
+            <tag> openpose </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>编译原理引论</title>
+      <link href="/2020/03/04/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%BC%95%E8%AE%BA/"/>
+      <url>/2020/03/04/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%BC%95%E8%AE%BA/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>常用Linux命令集合</title>
       <link href="/2020/02/18/%E5%B8%B8%E7%94%A8Linux%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/"/>
       <url>/2020/02/18/%E5%B8%B8%E7%94%A8Linux%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="零碎命令-快捷键"><a href="#零碎命令-快捷键" class="headerlink" title="零碎命令/快捷键"></a>零碎命令/快捷键</h2><ul><li>在<code>bash</code>里面光标跳到开头/结尾<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl+a/e</span><br></pre></td></tr></table></figure></li><li>查看当前目录下文件夹大小(不递归显示)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -h --max-depth=1</span><br></pre></td></tr></table></figure></li><li>查看<code>cuda</code>版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /usr/<span class="built_in">local</span>/cuda/version.txt</span><br></pre></td></tr></table></figure></li><li>查看<code>cudnn</code>版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat /usr/<span class="built_in">local</span>/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2</span><br><span class="line">nvcc --version</span><br></pre></td></tr></table></figure></li><li>查看硬盘上使用情况<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df -hl</span><br></pre></td></tr></table></figure></li><li>解压<code>zip</code>文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip xxx.zip</span><br></pre></td></tr></table></figure></li><li>解压<code>tar.gz</code>文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf xxx.tar.gz</span><br></pre></td></tr></table></figure></li><li>清理<code>Anaconda</code>环境<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda clean -p</span><br><span class="line">conda clean -t</span><br><span class="line">conda clean -y -all</span><br></pre></td></tr></table></figure></li><li>清理<code>~/.cache</code>下面的缓存(<strong>注意删除选项</strong>)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find ~/.cache/-<span class="built_in">type</span> f -atime +365 -delete</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="零碎命令-快捷键"><a href="#零碎命令-快捷键" class="headerlink" title="零碎命令/快捷键"></a>零碎命令/快捷键</h2><ul><li>在<code>bash</code>里面光标跳到开头/结尾<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl+a/e</span><br></pre></td></tr></table></figure></li><li>查看当前目录下文件夹大小(不递归显示)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -h --max-depth=1</span><br></pre></td></tr></table></figure></li><li>查看<code>cuda</code>版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /usr/<span class="built_in">local</span>/cuda/version.txt</span><br></pre></td></tr></table></figure></li><li>查看<code>cudnn</code>版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat /usr/<span class="built_in">local</span>/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2</span><br><span class="line">nvcc --version</span><br></pre></td></tr></table></figure></li><li>查看硬盘上使用情况<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df -hl</span><br></pre></td></tr></table></figure></li><li>解压<code>zip</code>文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip xxx.zip</span><br></pre></td></tr></table></figure></li><li>解压<code>tar.gz</code>文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf xxx.tar.gz</span><br></pre></td></tr></table></figure></li><li>压缩<code>zip</code>文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r myfile.zip ./*</span><br></pre></td></tr></table></figure></li><li>清理<code>Anaconda</code>环境<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda clean -p</span><br><span class="line">conda clean -t</span><br><span class="line">conda clean -y -all</span><br></pre></td></tr></table></figure></li><li>清理<code>~/.cache</code>下面的缓存(<strong>注意删除选项</strong>)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find ~/.cache/-<span class="built_in">type</span> f -atime +365 -delete</span><br></pre></td></tr></table></figure></li><li><code>apt-get</code>查看已安装程序的方法<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -l | grep <span class="string">'^ii'</span></span><br></pre></td></tr></table></figure></li></ul>]]></content>
       
       
       <categories>
@@ -87,9 +127,9 @@
       
         <tags>
             
-            <tag> TensorFlow </tag>
-            
             <tag> 环境 </tag>
+            
+            <tag> TensorFlow </tag>
             
         </tags>
       
